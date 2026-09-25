@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Carrito | Pixel Store</title><link rel="stylesheet" href="pixel-store.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head><body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="explorar.html">Explorar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <div class="category-dropdown">
+        <button class="category-trigger" type="button">Categorías <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="category-menu">
+          <a href="play.html"><i class="fa-brands fa-playstation"></i><span>PlayStation</span></a>
+          <a href="xbox.html"><i class="fa-brands fa-xbox"></i><span>Xbox</span></a>
+          <a href="Nintendo.html"><i class="fa-solid fa-gamepad"></i><span>Nintendo</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input data-search type="search" placeholder="Buscar juegos..." autocomplete="off"></div>
+      <a class="header-icon cart-link" href="carrito.html" title="Carrito"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <a class="login-btn" href="iniciar.html">Iniciar sesión</a>
+    </div>
+  </div>
+</header><main><section class="cart-page"><div class="page-heading"><span class="eyebrow">COMPRA</span><h1>Tu carrito</h1><p>Revisa tus juegos antes de finalizar la compra.</p></div><div class="cart-layout"><div class="cart-list" id="cartList"><div class="cart-item" data-price="289900"><img src="mariokart.jpg" alt="Mario Kart 8 Deluxe"><div class="cart-item-info"><span>Nintendo Switch</span><h3>Mario Kart 8 Deluxe</h3><strong>$289.900</strong></div><div class="quantity"><button data-qty="-1">−</button><span data-qty-value>1</span><button data-qty="1">+</button></div><button class="remove-item" data-remove title="Eliminar"><i class="fa-solid fa-trash"></i></button></div><div class="cart-item" data-price="259900"><img src="halo.jpg" alt="Halo Infinite"><div class="cart-item-info"><span>.box Series .|S</span><h3>Halo Infinite</h3><strong>$259.900</strong></div><div class="quantity"><button data-qty="-1">−</button><span data-qty-value>1</span><button data-qty="1">+</button></div><button class="remove-item" data-remove title="Eliminar"><i class="fa-solid fa-trash"></i></button></div><div class="cart-item" data-price="239900"><img src="resident4.jpg" alt="Resident Evil 4"><div class="cart-item-info"><span>PS5</span><h3>Resident Evil 4</h3><strong>$239.900</strong></div><div class="quantity"><button data-qty="-1">−</button><span data-qty-value>1</span><button data-qty="1">+</button></div><button class="remove-item" data-remove title="Eliminar"><i class="fa-solid fa-trash"></i></button></div></div><aside class="cart-summary"><h2>Resumen</h2><div><span>Subtotal</span><strong id="subtotal">$0</strong></div><div><span>IVA (19%)</span><strong id="tax">$0</strong></div><div class="summary-total"><span>Total</span><strong id="total">$0</strong></div><button class="btn btn-primary full" id="checkoutBtn">Finalizar compra</button><a class="continue-link" href="explorar.html">← Seguir comprando</a></aside></div></section></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="brand"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></div><p>Tu espacio para descubrir, comprar y disfrutar videojuegos.</p></div>
+    <div class="footer-column"><h4>Explorar</h4><a href="index.html">Inicio</a><a href="explorar.html">Explorar</a><a href="ofertas.html">Ofertas</a></div>
+    <div class="footer-column"><h4>Plataformas</h4><a href="play.html">PlayStation</a><a href="xbox.html">Xbox</a><a href="Nintendo.html">Nintendo</a></div>
+    <div class="footer-column"><h4>Cuenta</h4><a href="iniciar.html">Mi perfil</a><a href="carrito.html">Carrito</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Pixel Store</span><span>Hecho para nuestro proyecto escolar</span></div>
+</footer><script src="pixel-store.js"></script></body></html>

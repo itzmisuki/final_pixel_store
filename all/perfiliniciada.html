@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mi perfil | Pixel Store</title><link rel="stylesheet" href="pixel-store.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head><body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="indexiniciada.html"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></a>
+    <nav class="main-nav">
+      <a href="indexiniciada.html">Inicio</a>
+      <a href="explorariniciada.html">Explorar</a>
+      <a href="ofertasiniciada.html">Ofertas</a>
+      <div class="category-dropdown">
+        <button class="category-trigger" type="button">Categorías <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="category-menu">
+          <a href="playiniciada.html"><i class="fa-brands fa-playstation"></i><span>PlayStation</span></a>
+          <a href="xboxiniciada.html"><i class="fa-brands fa-xbox"></i><span>Xbox</span></a>
+          <a href="Nintendoiniciada.html"><i class="fa-solid fa-gamepad"></i><span>Nintendo</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input data-search type="search" placeholder="Buscar juegos..." autocomplete="off"></div>
+      <a class="header-icon cart-link" href="carritoiniciada.html" title="Carrito"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <a class="header-icon profile-link" href="perfiliniciada.html" title="Mi perfil"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </div>
+</header><main><section class="profile-page">
+  <div class="profile-heading"><span class="eyebrow">CUENTA</span><h1>Mi perfil</h1><p>Administra tus datos, seguridad y pedidos desde un solo lugar.</p></div>
+  <div class="profile-layout">
+    <aside class="profile-sidebar">
+      <div class="profile-card-mini"><div class="avatar" id="profileAvatar">U</div><div><strong id="sidebarName">Tu nombre</strong><span id="sidebarUser">@usuario</span></div></div>
+      <button class="profile-tab active" data-profile-tab="account"><i class="fa-solid fa-user"></i> Información</button>
+      <button class="profile-tab" data-profile-tab="security"><i class="fa-solid fa-shield-halved"></i> Seguridad</button>
+      <button class="profile-tab" data-profile-tab="orders"><i class="fa-solid fa-bag-shopping"></i> Pedidos</button>
+      <button class="profile-tab" data-profile-tab="favorites"><i class="fa-solid fa-heart"></i> Favoritos</button>
+      <button class="profile-logout" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</button>
+    </aside>
+    <div class="profile-content">
+      <section class="profile-panel active" data-panel="account"><div class="panel-heading"><div><span class="eyebrow">DATOS PERSONALES</span><h2>Información de cuenta</h2></div><button class="btn btn-secondary" id="editProfileBtn">Editar</button></div>
+        <form id="profileForm" class="profile-form">
+          <label>Nombre completo<input id="profileName" value="Tu nombre" disabled></label>
+          <label>Nombre de usuario<input id="profileUsername" value="usuario" disabled></label>
+          <label>Correo electrónico<input id="profileEmail" type="email" value="correo@ejemplo.com" disabled></label>
+          <label>Fecha de nacimiento<input id="profileBirth" type="date" value="2010-01-01" disabled></label>
+          <div class="form-actions" id="profileActions" hidden><button type="submit" class="btn btn-primary">Guardar cambios</button><button type="button" class="btn btn-secondary" id="cancelProfile">Cancelar</button></div>
+        </form><p class="save-message" id="profileMessage"></p>
+      </section>
+      <section class="profile-panel" data-panel="security"><div class="panel-heading"><div><span class="eyebrow">SEGURIDAD</span><h2>Protege tu cuenta</h2></div></div>
+        <div class="security-list"><div class="security-item"><span class="security-icon"><i class="fa-solid fa-key"></i></span><div><strong>Contraseña</strong><p>Actualiza tu contraseña periódicamente.</p></div><button class="btn btn-secondary" id="changePasswordBtn">Cambiar</button></div><div class="security-item"><span class="security-icon"><i class="fa-solid fa-bell"></i></span><div><strong>Notificaciones</strong><p>Recibe avisos sobre pedidos y promociones.</p></div><label class="switch"><input id="notificationsToggle" type="checkbox" checked><span></span></label></div></div>
+        <form id="passwordForm" class="password-form" hidden><label>Nueva contraseña<div class="password-input"><input id="newPassword" type="password" minlength="6" required><button type="button" data-toggle-password="newPassword"><i class="fa-solid fa-eye"></i></button></div></label><label>Confirmar contraseña<div class="password-input"><input id="confirmPassword" type="password" minlength="6" required><button type="button" data-toggle-password="confirmPassword"><i class="fa-solid fa-eye"></i></button></div></label><button class="btn btn-primary" type="submit">Actualizar contraseña</button><p class="save-message" id="passwordMessage"></p></form>
+      </section>
+      <section class="profile-panel" data-panel="orders"><div class="panel-heading"><div><span class="eyebrow">HISTORIAL</span><h2>Mis pedidos</h2></div></div><div class="empty-state"><i class="fa-solid fa-box-open"></i><h3>Aún no tienes pedidos</h3><p>Cuando realices una compra aparecerá aquí.</p><a class="btn btn-primary" href="explorariniciada.html">Explorar juegos</a></div></section>
+      <section class="profile-panel" data-panel="favorites"><div class="panel-heading"><div><span class="eyebrow">GUARDADOS</span><h2>Mis favoritos</h2></div></div><div class="empty-state"><i class="fa-solid fa-heart"></i><h3>Tu lista está vacía</h3><p>Pulsa el corazón en un juego para guardarlo.</p><a class="btn btn-primary" href="explorariniciada.html">Ver catálogo</a></div></section>
+    </div>
+  </div>
+</section></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="brand"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></div><p>Tu espacio para descubrir, comprar y disfrutar videojuegos.</p></div>
+    <div class="footer-column"><h4>Explorar</h4><a href="indexiniciada.html">Inicio</a><a href="explorariniciada.html">Explorar</a><a href="ofertasiniciada.html">Ofertas</a></div>
+    <div class="footer-column"><h4>Plataformas</h4><a href="playiniciada.html">PlayStation</a><a href="xboxiniciada.html">Xbox</a><a href="Nintendoiniciada.html">Nintendo</a></div>
+    <div class="footer-column"><h4>Cuenta</h4><a href="perfiliniciada.html">Mi perfil</a><a href="carrito.html">Carrito</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Pixel Store</span><span>Hecho para nuestro proyecto escolar</span></div>
+</footer><script src="pixel-store.js"></script></body></html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>perfilprueba | Pixel Store</title><link rel="stylesheet" href="pixel-store.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head><body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="explorar.html">Explorar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <div class="category-dropdown">
+        <button class="category-trigger" type="button">Categorías <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="category-menu">
+          <a href="play.html"><i class="fa-brands fa-playstation"></i><span>PlayStation</span></a>
+          <a href="xbox.html"><i class="fa-brands fa-xbox"></i><span>Xbox</span></a>
+          <a href="Nintendo.html"><i class="fa-solid fa-gamepad"></i><span>Nintendo</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input data-search type="search" placeholder="Buscar juegos..." autocomplete="off"></div>
+      <a class="header-icon cart-link" href="carrito.html" title="Carrito"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <a class="login-btn" href="iniciar.html">Iniciar sesión</a>
+    </div>
+  </div>
+</header><main>
+
+    
+    
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    
+
+
+    <!-- =========================
+         PERFIL
+    ========================== -->
+
+    <main class="profile-container">
+
+
+        <div class="profile-title">
+
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <h1>Mi Perfil</h1>
+                <p>Administra la información de tu cuenta.</p>
+            </div>
+
+        </div>
+
+
+        <!-- INFORMACIÓN PERSONAL -->
+
+        <section class="profile-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Información personal</h2>
+                    <p>Consulta y modifica tus datos personales.</p>
+                </div>
+
+            </div>
+
+
+            <!-- NOMBRE -->
+
+            <div class="data-row">
+
+                <div class="data-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="data-content">
+
+                    <span>Nombre completo</span>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        value="Juan David Coll Velez"
+                        disabled>
+
+                </div>
+
+                <button
+                    class="edit-btn"
+                    type="button"
+                    onclick="editarDato('nombre')"
+                    title="Editar nombre">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- FECHA -->
+
+            <div class="data-row">
+
+                <div class="data-icon">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+
+                <div class="data-content">
+
+                    <span>Fecha de nacimiento</span>
+
+                    <input
+                        type="text"
+                        id="fecha"
+                        value="09/07/2009"
+                        disabled>
+
+                </div>
+
+                <button
+                    class="edit-btn"
+                    type="button"
+                    onclick="editarDato('fecha')"
+                    title="Editar fecha">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- CORREO -->
+
+            <div class="data-row">
+
+                <div class="data-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="data-content">
+
+                    <span>Correo electrónico</span>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        value="juancoll.velez@gmail.com"
+                        disabled>
+
+                </div>
+
+                <button
+                    class="edit-btn"
+                    type="button"
+                    onclick="editarDato('correo')"
+                    title="Editar correo">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="save-container">
+
+                <button
+                    class="save-btn"
+                    type="button"
+                    onclick="guardarDatos()">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Guardar cambios
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CUENTA -->
+
+        <section class="profile-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Cuenta</h2>
+                    <p>Gestiona tu sesión en Pixel Store.</p>
+                </div>
+
+            </div>
+
+
+            <div class="account-row">
+
+                <div class="account-info">
+
+                    <div class="account-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Cerrar sesión</h3>
+
+                        <p>
+                            Salir de tu cuenta actual.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="logout-btn"
+                    type="button"
+                    onclick="cerrarSesion()">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function editarDato(id) {
+
+            const campo = document.getElementById(id);
+
+            campo.disabled = false;
+
+            campo.focus();
+
+            campo.classList.add("editing");
+
+        }
+
+
+        function guardarDatos() {
+
+            const nombre =
+                document.getElementById("nombre").value;
+
+            const fecha =
+                document.getElementById("fecha").value;
+
+            const correo =
+                document.getElementById("correo").value;
+
+
+            const datos = {
+
+                nombre: nombre,
+                fecha: fecha,
+                correo: correo
+
+            };
+
+
+            localStorage.setItem(
+                "pixelStoreUsuario",
+                JSON.stringify(datos)
+            );
+
+
+            document.getElementById("nombre").disabled = true;
+            document.getElementById("fecha").disabled = true;
+            document.getElementById("correo").disabled = true;
+
+
+            document.getElementById("nombre")
+                .classList.remove("editing");
+
+            document.getElementById("fecha")
+                .classList.remove("editing");
+
+            document.getElementById("correo")
+                .classList.remove("editing");
+
+
+            alert("Cambios guardados correctamente.");
+
+        }
+
+
+        function cargarDatos() {
+
+            const datosGuardados =
+                localStorage.getItem("pixelStoreUsuario");
+
+
+            if (datosGuardados) {
+
+                const datos =
+                    JSON.parse(datosGuardados);
+
+
+                document.getElementById("nombre").value =
+                    datos.nombre || "Juan David Coll Velez";
+
+
+                document.getElementById("fecha").value =
+                    datos.fecha || "09/07/2009";
+
+
+                document.getElementById("correo").value =
+                    datos.correo || "juancoll.velez@gmail.com";
+
+            }
+
+        }
+
+
+        function cerrarSesion() {
+
+            localStorage.removeItem("pixelStoreUsuario");
+
+            window.location.href =
+                "indexiniciada.html";
+
+        }
+
+
+        cargarDatos();
+
+    </script>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="brand"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></div><p>Tu espacio para descubrir, comprar y disfrutar videojuegos.</p></div>
+    <div class="footer-column"><h4>Explorar</h4><a href="index.html">Inicio</a><a href="explorar.html">Explorar</a><a href="ofertas.html">Ofertas</a></div>
+    <div class="footer-column"><h4>Plataformas</h4><a href="play.html">PlayStation</a><a href="xbox.html">Xbox</a><a href="Nintendo.html">Nintendo</a></div>
+    <div class="footer-column"><h4>Cuenta</h4><a href="iniciar.html">Mi perfil</a><a href="carrito.html">Carrito</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Pixel Store</span><span>Hecho para nuestro proyecto escolar</span></div>
+</footer><script src="pixel-store.js"></script></body></html>

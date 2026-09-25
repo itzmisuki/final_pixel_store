@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pixel Store</title><link rel="stylesheet" href="pixel-store.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head><body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="explorar.html">Explorar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <div class="category-dropdown">
+        <button class="category-trigger" type="button">Categorías <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="category-menu">
+          <a href="play.html"><i class="fa-brands fa-playstation"></i><span>PlayStation</span></a>
+          <a href="xbox.html"><i class="fa-brands fa-xbox"></i><span>Xbox</span></a>
+          <a href="Nintendo.html"><i class="fa-solid fa-gamepad"></i><span>Nintendo</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input data-search type="search" placeholder="Buscar juegos..." autocomplete="off"></div>
+      <a class="header-icon cart-link" href="carrito.html" title="Carrito"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <a class="login-btn" href="iniciar.html">Iniciar sesión</a>
+    </div>
+  </div>
+</header><main>
+<section class="hero home-hero"><div class="hero-copy"><span class="eyebrow">★ NUEVO LANZAMIENTO</span><h1>Descubre una nueva forma de <span>jugar.</span></h1><p>Compra y descubre videojuegos para PlayStation, Xbox y Nintendo desde una sola plataforma.</p><div class="hero-actions"><a class="btn btn-primary" href="explorar.html">Explorar catálogo</a><a class="btn btn-secondary" href="ofertas.html">Ver ofertas</a></div></div><div class="hero-art"><img src="banner.jpg" alt="Videojuegos"></div></section>
+<section class="section"><div class="section-heading"><div><span class="eyebrow">CATÁLOGO</span><h2>Juegos populares</h2></div><a class="text-link" href="explorar.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></div><div class="games-grid"><article class="game-card" data-game="mario kart 8 deluxe" data-platform="nintendo switch"><a class="game-image" href="portadamario.html"><img src="mariokart.jpg" alt="Mario Kart 8 Deluxe"><span class="discount-badge">-30%</span></a><div class="game-info"><span class="game-platform">Nintendo Switch</span><h3>Mario Kart 8 Deluxe</h3><p>Carreras</p><div class="game-bottom"><strong>$289.900</strong><a class="small-link" href="portadamario.html">Ver juego</a></div></div></article><article class="game-card" data-game="mortal kombat 1" data-platform="ps5"><a class="game-image" href="portadamortalkombat.html"><img src="mk1.jpg" alt="Mortal Kombat 1"><span class="discount-badge">-15%</span></a><div class="game-info"><span class="game-platform">PS5</span><h3>Mortal Kombat 1</h3><p>Lucha y acción</p><div class="game-bottom"><strong>$259.900</strong><a class="small-link" href="portadamortalkombat.html">Ver juego</a></div></div></article><article class="game-card" data-game="resident evil 4" data-platform="ps5"><a class="game-image" href="portadaresident.html"><img src="resident4.jpg" alt="Resident Evil 4"></a><div class="game-info"><span class="game-platform">PS5</span><h3>Resident Evil 4</h3><p>Terror y acción</p><div class="game-bottom"><strong>$239.900</strong><a class="small-link" href="portadaresident.html">Ver juego</a></div></div></article><article class="game-card" data-game="marvel's spider-man 2" data-platform="ps5"><a class="game-image" href="portadaspiderman.html"><img src="spiderman2.jpg" alt="Marvel&#x27;s Spider-Man 2"><span class="discount-badge">-20%</span></a><div class="game-info"><span class="game-platform">PS5</span><h3>Marvel's Spider-Man 2</h3><p>Acción y aventura</p><div class="game-bottom"><strong>$279.900</strong><a class="small-link" href="portadaspiderman.html">Ver juego</a></div></div></article><article class="game-card" data-game="halo infinite" data-platform="xbox series x|s"><a class="game-image" href="portadahalo.html"><img src="halo.jpg" alt="Halo Infinite"><span class="discount-badge">-45%</span></a><div class="game-info"><span class="game-platform">Xbox Series X|S</span><h3>Halo Infinite</h3><p>Acción y shooter</p><div class="game-bottom"><strong>$199.900</strong><a class="small-link" href="portadahalo.html">Ver juego</a></div></div></article><article class="game-card" data-game="ea sports fc 25" data-platform="ps5"><a class="game-image" href="portadadefc25.html"><img src="fc25.jpg" alt="EA Sports FC 25"></a><div class="game-info"><span class="game-platform">PS5</span><h3>EA Sports FC 25</h3><p>Deportes</p><div class="game-bottom"><strong>$249.900</strong><a class="small-link" href="portadadefc25.html">Ver juego</a></div></div></article></div></section>
+<section class="section platforms-section"><div class="section-heading centered"><div><span class="eyebrow">ELIGE TU PLATAFORMA</span><h2>Juega como quieras</h2></div></div><div class="platform-grid">
+<a class="platform-tile" href="play.html"><span><i class="fa-brands fa-playstation"></i></span><h3>PlayStation</h3><p>Descubre aventuras para PS4 y PS5.</p></a>
+<a class="platform-tile" href="xbox.html"><span><i class="fa-brands fa-xbox"></i></span><h3>Xbox</h3><p>Acción, carreras y grandes historias.</p></a>
+<a class="platform-tile" href="Nintendo.html"><span><i class="fa-solid fa-gamepad"></i></span><h3>Nintendo</h3><p>La magia de Nintendo en un solo lugar.</p></a>
+</div></section>
+<section class="promo"><div><span class="eyebrow">OFERTA ESPECIAL</span><h2>Hasta 70% de descuento</h2><p>Encuentra grandes juegos a precios especiales por tiempo limitado.</p><a class="btn btn-primary" href="ofertas.html">Ver ofertas</a></div><img src="controller.jpg" alt="Control de videojuegos"></section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="brand"><span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span><span>PIXEL STORE</span></div><p>Tu espacio para descubrir, comprar y disfrutar videojuegos.</p></div>
+    <div class="footer-column"><h4>Explorar</h4><a href="index.html">Inicio</a><a href="explorar.html">Explorar</a><a href="ofertas.html">Ofertas</a></div>
+    <div class="footer-column"><h4>Plataformas</h4><a href="play.html">PlayStation</a><a href="xbox.html">Xbox</a><a href="Nintendo.html">Nintendo</a></div>
+    <div class="footer-column"><h4>Cuenta</h4><a href="iniciar.html">Mi perfil</a><a href="carrito.html">Carrito</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Pixel Store</span><span>Hecho para nuestro proyecto escolar</span></div>
+</footer><script src="pixel-store.js"></script></body></html>
